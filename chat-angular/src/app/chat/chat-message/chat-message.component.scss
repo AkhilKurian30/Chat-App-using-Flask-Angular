@@ -1,0 +1,79 @@
+.chat-content {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+}
+
+.chat-avatar {
+    display: block;
+    border-radius: 50%;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    background:#26c560;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 2.5rem;
+    height: 2.5rem;
+    text-align: center;
+    line-height: 2.5rem;
+    font-size: 0.875rem;
+    color: white;
+    content-visibility: auto;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.chat-user-date-message {
+    margin-left: 1rem;
+}
+
+.seperator {
+    background-color: #e5ebec;
+    width: 100%;
+    height: .1rem;
+}
+
+.chat-user-date {
+    margin-bottom: .5rem;
+}
+
+.chat-user {
+    width: auto;
+    height: auto;
+    flex-shrink: 0;
+    overflow: visible;
+    font-weight: 700;
+    font-family: "system-ui", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif, "System Default", serif;
+    color: #1f2937;
+    font-size: .875rem; //14px
+    letter-spacing: 0rem;
+    line-height: 1.25;
+}
+
+.chat-date {
+    width: auto;
+    height: auto;
+    flex-shrink: 0;
+    overflow: visible;
+    font-family: "system-ui", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif, serif;
+    color: var(--Gray_400, #9da3af);
+    font-size: .75rem; //12px
+    letter-spacing: 0rem;
+}
+
+.chat-text-message{
+    font-size: 14px;
+}

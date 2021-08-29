@@ -1,0 +1,24 @@
+<div class="flex container-page w-full">
+
+  <div class="right-panel flex-auto p-0 w-1/3 h-full">
+    <div
+      #scrollMe
+      [scrollTop]="scrollMe.scrollHeight"
+      class="chat-message-container h-2/3"
+    >
+      <ngx-chat-message
+        *ngFor="let msg of messages"
+        type="text"
+        [message]="msg.message"
+        reply="false"
+        [sender]="msg.member.first_name"
+        [date]="msg.created_at"
+      >
+      </ngx-chat-message>
+    </div>
+
+    <div class="chat-form-container flex justify-center h-1/3">
+      <ngx-chat-form (newMessage)="sendMessage($event)"></ngx-chat-form>
+    </div>
+  </div>
+</div>

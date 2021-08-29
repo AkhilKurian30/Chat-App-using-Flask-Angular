@@ -1,0 +1,30 @@
+.container-page {
+    width: 100%;
+    height: calc(100vh - 130px);
+  }
+  
+  .left-panel {
+    overflow: auto;
+    flex: 0 0 352px;
+  }
+  
+  .right-panel {
+    overflow: auto;
+    flex: auto;
+    border-left: 1px solid #e4e8eb;
+  }
+  
+  .chat-message-container {
+    overflow: auto !important;
+  }
+  
+  .chat-form-container {
+    flex-grow: 1;
+  }
+  
+  ngx-chat-form{
+    display: flex;
+    flex-grow: 1;
+    padding: 3rem;
+  }
+  

@@ -1,0 +1,7 @@
+flask 
+flask-cors 
+flask-socketio
+simple-websocket
+gunicorn
+eventlet==0.30.2
+Werkzeug

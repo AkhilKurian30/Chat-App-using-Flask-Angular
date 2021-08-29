@@ -1,0 +1,45 @@
+.chat-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: #ffffff;
+  overflow: auto;
+  flex-grow: 1;
+  border-radius: .75rem;
+  border: .1rem #6b727f solid;
+}
+
+.chat-form-message > textarea,input { 
+  border: none;
+  overflow: auto;
+  outline: none;
+  border-radius: 0;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  resize: none; /*remove the resize handle on the bottom right*/ 
+  width: -webkit-fill-available !important;     
+  height: 100% !important;
+}
+
+.chat-form-message{
+  width: -webkit-fill-available;
+  flex: 1;
+}
+
+.chat-form-send {
+  padding: 1rem;
+  width: 100%;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  background-color:  #f1f5f6;
+  overflow: visible;
+}
+
+.br-1{
+  border-radius: .65rem;
+}

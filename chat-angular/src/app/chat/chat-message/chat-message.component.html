@@ -1,0 +1,32 @@
+<div class="chat-content">
+  <!-- <ng-container *ngIf="!reply"> -->
+    <div class="chat-avatar">
+      <div *ngIf="avatar">
+        <img [src]="avatar" />
+      </div>
+      <div *ngIf="!avatar">
+        {{ sender | avatarText }}
+      </div>
+    </div>
+
+    <div class="chat-user-date-message">
+      <div class="chat-user-date flex">
+        <div class="chat-user">
+          {{ sender }}
+        </div>
+
+        <div class="chat-date ml-1.5">
+          <time>{{ date+'Z' | date: 'shortTime' }}</time>
+        </div>
+      </div>
+
+      <div class="chat-message">
+        <div *ngIf="type === 'text'" class="chat-text-message">
+          {{ message }}
+        </div>
+      </div>
+    </div>
+  <!-- </ng-container> -->
+
+</div>
+<div class="seperator"></div>
