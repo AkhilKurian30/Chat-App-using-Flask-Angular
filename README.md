@@ -1,6 +1,6 @@
 # Chat-App-using-Flask-Angular
 Angular package used
- socket.io-client
+ socket.io-client This can be used with jwt token
 
 #Run the application
     python3 -m venv v
